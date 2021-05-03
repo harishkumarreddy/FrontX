@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .sidebar {
+  width: 8.5rem !important;
+} */
+.hello-msg{
+  min-height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-card{
+  min-height: 92.5vh;
+  overflow-y: auto;
+  word-wrap: break-word;
+}
+
+.banner-img{
+  max-height: 45vh;
+  min-height: 45vh;
+  vertical-align: middle;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sidebar-brand{
+  height: 15rem !important;
+  max-height: 15rem !important;
+  min-height: 15rem !important;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-brand > .sidebar-brand-icon{
+  width: 100% !important;
+    position: relative;
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+  border-radius: 50%;
+  display: flex !important;
+  flex-direction: column !important;
+  vertical-align: middle;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sidebar-dark .nav-item .nav-link{
+  text-align: center;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.sidebar-dark .nav-item.active .nav-link,
+.sidebar-dark .nav-item .nav-link.active,
+.sidebar-dark .nav-item .nav-link.active i {
+  color: #fff;
+  font-weight: 700;
+}
+@media (max-width: 475px) {
+  .navbar.topbar{
+    display: flex !important;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar-brand{
+    height: 7.5rem !important;
+    max-height: 7.5rem !important;
+    min-height: 7.5rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-brand{
+    height: 15rem !important;
+    max-height: 15rem !important;
+    min-height: 15rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar.topbar{
+    display: none !important;
+  }
+}
